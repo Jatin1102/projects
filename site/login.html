@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="stylesheet" href="./public/css/sign.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input
+        type="email"
+        id="inputEmail"
+        class="form-control"
+        placeholder="Email address"
+        required
+        autofocus
+      />
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input
+        type="password"
+        id="inputPassword"
+        class="form-control"
+        placeholder="Password"
+        required
+      />
+
+      <button
+        id="quickstart-sign-in"
+        class="btn btn-lg btn-primary btn-block"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyDXJL0qVGgTPpOhZfjJsa-Ne_dxjjWADH0",
+        authDomain: "authproject-47c88.firebaseapp.com",
+        databaseURL: "https://authproject-47c88.firebaseio.com",
+        projectId: "authproject-47c88",
+        storageBucket: "authproject-47c88.appspot.com",
+        messagingSenderId: "574637670882",
+        appId: "1:574637670882:web:3679569dd86e324816f9bb",
+        measurementId: "G-5EJ4KWQZTC",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
