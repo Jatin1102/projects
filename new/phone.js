@@ -1,5 +1,3 @@
-var boolButton = false;
-
 window.onload = function () {
   render();
 };
@@ -33,7 +31,7 @@ function codeverify() {
   coderesult
     .confirm(code)
     .then(function (result) {
-      boolButton = true;
+      formFill();
       alert("Successfully registered");
       var user = result.user;
       console.log(user);
@@ -64,14 +62,12 @@ addBtn.addEventListener("click", (e) => {
   });
 });
 
-$("#verifyButton").on("click", function () {
-  if (boolButton) {
-    $(".form-signin input:required").each(function () {
-      if (this.value === "") {
-        alert("Please fill all field");
-      } else {
-        addBtn.disabled = false;
-      }
-    });
-  }
-});
+function formFill() {
+  $(".form-signin input:required").each(function () {
+    if (this.value === "") {
+      alert("Please fill all field");
+    } else {
+      addBtn.disabled = false;
+    }
+  });
+}
