@@ -11,6 +11,8 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body class="text-center">
@@ -62,13 +64,17 @@
           id="verificationCode"
           placeholder="Enter verification code"
         />
-        <button type="button" onclick="codeverify();">Verify code</button>
+
+        <button id="verifyButton" type="button" onclick="codeverify();">
+          Verify code
+        </button>
       </form>
 
       <button
         id="quickstart-sign-in"
         class="btn btn-lg btn-primary btn-block"
         type="submit"
+        disabled
       >
         Submit
       </button>
@@ -93,7 +99,7 @@
       firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="./signup.js"></script>
+    <!-- <script src="./signup.js"></script> -->
     <script src="./phone.js"></script>
   </body>
 </html>
