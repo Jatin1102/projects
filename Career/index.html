@@ -560,12 +560,12 @@
     <section class="page-section" id="contact">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Join Now</h2>
+          <h2 class="section-heading text-uppercase">Join Now!</h2>
           <h2 class="section-subheading text-muted">Its now or never</h2>
         </div>
         <form id="contactForm" name="sentMessage" novalidate="novalidate">
           <div class="row align-items-stretch mb-5">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="form-group">
                 <input
                   class="form-control"
@@ -593,7 +593,7 @@
                 <input
                   class="form-control"
                   id="password"
-                  type="text"
+                  type="password"
                   placeholder="Your Password *"
                   required="required"
                   data-validation-required-message="Please enter your password."
@@ -611,28 +611,43 @@
                   data-validation-required-message="Please enter your phone number."
                 />
                 <p class="help-block text-danger"></p>
+                <br />
               </div>
-            </div>
 
-            <div class="col-md-6">
               <form>
-                <div id="recaptcha-container"></div>
-                <button type="button" onclick="phoneAuth();">SendCode</button>
+                <div class="form-group mb-md-0" id="recaptcha-container"></div>
+                <button
+                  class="btn btn-primary btn-md text-uppercase"
+                  type="button"
+                  onclick="phoneAuth();"
+                >
+                  SendCode
+                </button>
+                <br />
               </form>
 
               <form>
+                <br />
                 <input
+                  class="form-control"
                   type="text"
                   id="verificationCode"
                   placeholder="Enter verification code"
                 />
 
-                <button id="verifyButton" type="button" onclick="codeverify();">
+                <button
+                  class="btn btn-primary btn-md text-uppercase"
+                  id="verifyButton"
+                  type="button"
+                  onclick="codeverify();"
+                >
                   Verify code
                 </button>
               </form>
+            </div>
 
-              <!-- <div class="form-group form-group-textarea mb-md-0">
+            <!-- <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
                 <textarea
                   class="form-control"
                   id="message"
@@ -641,8 +656,8 @@
                   data-validation-required-message="Please enter a message."
                 ></textarea>
                 <p class="help-block text-danger"></p>
-              </div> -->
-            </div>
+              </div>
+            </div> -->
           </div>
           <div class="text-center">
             <div id="success"></div>
@@ -650,6 +665,8 @@
               class="btn btn-primary btn-xl text-uppercase"
               id="sendMessageButton"
               type="submit"
+              onclick="window.location.href='new.html'"
+              disabled
             >
               Sign Up
             </button>
@@ -1006,7 +1023,7 @@
     <script src="assets/mail/jqBootstrapValidation.js"></script>
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
-    <script src="./phone.js"></script>
+    <script src="./js/signup.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
