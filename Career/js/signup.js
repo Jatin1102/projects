@@ -38,6 +38,7 @@ function codeverify() {
     })
     .catch(function (error) {
       alert(error.message);
+      console.log(error.message);
     });
 }
 
