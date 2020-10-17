@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Finder</title>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/carousel.css">
+</head>
+<body>
+
+    <!-- .......Header........ -->
+    <div class="header">
+        <div class="container">
+        
+            <div class="navbar">
+                <!-- <div class="logo">
+            <img src="./images/career-finder.jpg" class=".career-logo" >
+                </div> -->
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="products.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+        
+        </div>
+    </div>
+ 
+    <main role="main">
+    
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+            <!-- </div>
+    <div class="header-image">
+        <img src="./images/nav.jpg" alt="">
+    </div> -->
+
+<!-- ........Testimonials......... -->
+<div class="testimonial">
+
+    <div class="small-container">
+<h2 class="title">Permanent Residence</h2>
+<h4 >Check Your Eligibility...</h4>
+        <div class="row">
+
+            <div class="col-3">
+                
+                <h2>Skilled</h2>
+                
+                <p>Moving to another country isn't only for those with a degree and
+                    five years of relevant work experience. Anyone who wants to do it,
+                    can.</p>
+                    <img src="./Career/assets/img/Permanent Residence/skilled.jpg">
+                
+                
+            </div>
+
+            <div class="col-3">
+            
+                <h2>Business</h2>
+            
+                <p>Setting up a business abroad is much easier today than it was 20
+                years ago, with global connectivity at an all-time high thanks to
+                the internet and a rise in international investment.</p>
+                <img src="./Career/assets/img/Permanent Residence/business.jpeg">
+            
+            
+            </div>
+            <div class="col-3">
+            
+                <h2>LMIA</h2>
+            
+                <p>Apply for a Labour Market Impact Assessment (LMIA) to determine if
+                you can work as a foreign worker to fill labour or skills
+                shortages on a temporary basis.</p>
+                <img src="./Career/assets/img/Permanent Residence/lmia.jpg">
+            
+            
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+<!-- ........Featured Products........ -->
+<div class="small-container">
+
+    <h2 class="title">Study Abroad</h2>
+<h4>Choose Your Dream College...</h4>
+<div class="row">
+    
+    <div class="col-4">
+    
+        <h2>Massachusetts Institute of Technology</h2>
+        <img src="./images/college-1.jpeg">
+    <div>
+
+        <p>Course Duration:</p>
+        <p><strong>4 Years</strong></p>
+    
+        <p>1st Year Total Fees:</p>
+        <p><strong>Rs 58.2 Lakhs</strong></p>
+    
+        <p>Eligibility:</p>
+        <p><strong>TOEFL:90,SAT</strong></p>
+    </div>
+
+
+        
+    
+    
+    </div>
+<div class="col-4">
+
+    <h2>University of Alberta (UofA)</h2>
+    <img src="./images/college-2.jpeg">
+
+    <div>
+    
+        <p>Course Duration:</p>
+        <p><strong>20 Months</strong></p>
+    
+        <p>1st Year Total Fees:</p>
+        <p><strong>Rs 25.8 Lakhs</strong></p>
+    
+        <p>Eligibility:</p>
+        <p><strong>TOEFL:100,IELTS:7</strong></p>
+    </div>
+</div>
+<div class="col-4">
+
+    <h2>University of Tasmania (UTAS)</h2>
+
+    <img src="./images/college-3.jpeg">
+    <div>
+    
+        <p>Course Duration:</p>
+        <p><strong>3 Years</strong></p>
+    
+        <p>1st Year Total Fees:</p>
+        <p><strong>Rs 22.5 Lakhs</strong></p>
+    
+        <p>Eligibility:</p>
+        <p><strong>TOEFL:72,IELTS:6</strong></p>
+    </div>
+
+</div>
+
+<div class="col-4">
+
+    <h2>University of Oxford (OU)</h2>
+    <img src="./images/college-4.jpeg">
+
+    <div>
+    
+        <p>Course Duration:</p>
+        <p><strong>6 Years</strong></p>
+    
+        <p>1st Year Total Fees:</p>
+        <p><strong>Rs 40.8 Lakhs</strong></p>
+    
+        <p>Eligibility:</p>
+        <p><strong>IELTS:7.5</strong></p>
+    </div>
+
+</div>
+<a  class="btn" onclick="countryPopUp()" >Select Country &#8594</a>
+
+</div>
+
+<!-----------Choose Country----------->
+    <style>
+        #window-cross{
+            float:right;
+    max-width:30px;        
+    filter:grayscale(0);
+  
+        }
+.choose-country img{
+    width:200px;
+    margin:0px;
+    padding:0px;
+}
+
+
+    </style>
+
+<!-- --------------------------------------- -->
+
+
+
+
+<div class="choose-country" id="selectCountry">
+    
+
+<div>
+
+    <h2 class="title">Select a Country</h2>
+    <img src="./images/window-cross.jpg" width="30px" height="30px" id="window-cross">
+</div>
+
+
+        <div class="row">
+            <div class="col-4">
+                <img src="./images/country-UK.jpg" id="UK" onclick="imageClick(this.id)">
+                <h3>UK</h3>
+            </div>
+            <div class="col-4">
+                <img src="./images/country-australia.jpg" id="australia" onclick="imageClick(this.id)">
+                <h3>Australia</h3>
+            </div>
+            <div class="col-4">
+            
+                <img src="./images/country-canada.jpg" id="canada" onclick="imageClick(this.id)">
+                <h3>Canada</h3>
+            </div>
+            <div class="col-4">
+                <img src="./images/country-newzealand.jpg" id="newzealand" onclick="imageClick(this.id)">
+                <h3>NewZealand</h3>
+            </div>
+        </div>
+      
+        <div class="row">
+            <div class="col-4">
+                <img src="./images/country-europe.jpg" id="europe" onclick="imageClick(this.id)">
+                <h3>Europe</h3>
+            </div>
+            
+        </div>
+    
+</div>
+
+<!--  -->
+
+<!-- <div id="popup1" class="overlay">
+    
+    <div class="popup">
+        <h2 class="title">Select a Country</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="row">
+            <div class="col-2">
+                <img src="./images/country-UK.jpg" id="UK" onclick="imageClick(this.id)">
+                <h3>UK</h3>
+            </div>
+            <div class="col-2">
+                <img src="./images/country-australia.jpg" id="australia" onclick="imageClick(this.id)">
+                <h3>Australia</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+
+                <img src="./images/country-canada.jpg" id="canada" onclick="imageClick(this.id)">
+                <h3>Canada</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <img src="./images/country-europe.jpg" id="europe" onclick="imageClick(this.id)">
+                <h3>Europe</h3>
+            </div>
+            <div class="col-2">
+                <img src="./images/country-newzealand.jpg" id="newzealand" onclick="imageClick(this.id)">
+                <h3>NewZealand</h3>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- .......Latest Products........ -->
+<h2 class="title">IELTS</h2>
+
+<div class="row">
+
+    <div class="col-4">
+        <img src="./images/product-5.jpg" alt="">
+        <h4>Red Printed T-Shirt</h4>
+
+        <div class="rating">
+
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star-o"></i>
+        </div>
+
+        <p>$50.0</p>
+    </div>
+    <div class="col-4">
+        <img src="./images/product-6.jpg" alt="">
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.0</p>
+    </div>
+    <div class="col-4">
+        <img src="./images/product-7.jpg" alt="">
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star-half-o"></i>
+        </div>
+        <p>$50.0</p>
+    </div>
+
+    
+</div>
+</div>
+</div>
+<!-- ......offer...... -->
+
+<div class="offer">
+
+    <div class="small-container">
+        <div class="row">
+        
+        <div class="col-2">
+            <img src="./images/exclusive.png" class="offer-img">
+        </div>
+        <div class="col-2">
+            <p>Exclusively Available on RedStore</p>
+            <h1>Smart Band 4</h1>
+            <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable
+                brightness, so everything is clear as can be</small>
+                <a href="" class="btn">Buy Now &#8594</a>
+        </div>
+        
+        </div>
+    
+    
+    </div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+<div class="conatiner">
+    <div class="row">
+        <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+           <div class="app-logo">
+
+               <img src="./images/play-store.png" >
+               <img src="./images/app-store.png" >
+           </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="./images/career-finder.jpg" >
+            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sport Accesssible to the Many.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./script/index.js"></script>
+</body>
+</html>

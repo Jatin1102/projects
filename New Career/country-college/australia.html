@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<style>
+    .header-image {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .header-image img {
+        max-width: 200px;
+    }
+
+    /* -----------vertical-navbar------------ */
+    .vertical-navbar{
+    position:fixed;
+    float:left;
+ left:0;
+ top:70px;
+ /* border-right: 2px solid  gray; */
+ height:1000px
+    }   
+    .vertical-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: white;
+}
+
+.vertical-navbar li a {
+    text-align: right;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+#div-1{
+   background-color: #ff523b; 
+}
+.vertical-navbar li a:hover {
+  background-color: #ff523b;
+  color: white;
+}
+.vertical-navbar-2{
+    margin-left:30px;
+    
+}
+
+#div-col-2,#div-col-3,#div-col-4{
+    display:none;
+}
+</style>
+<body>
+
+    <!-- .......Header........ -->
+    <div class="header">
+        <div class="container">
+
+            <div class="navbar">
+               
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../index.html">Home</a></li>
+                    
+                        <li><a href="">About</a></li>
+                        <li><a href="">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+                <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="vertical-navbar" >
+            <div class="header-image">
+                <img src="../images/country-australia.jpg" alt="">
+            </div>
+<ul>
+    <li><a href="#home" id="div-1" onclick="changediv(this.id)">Top Universities</a></li>
+    <li><a href="#news" id="div-2" onclick="changediv(this.id)">Eligibility</a></li>
+    <li><a href="#contact" id="div-3" onclick="changediv(this.id)">Cost of Living</a></li>
+    <li><a href="#about" id="div-4" onclick="changediv(this.id)">About</a></li>
+</ul>
+        </div>
+
+
+        
+<!---------------------------------------------------------------------------------------------------->
+        
+
+
+<!-- ........Testimonials......... -->
+<div class="testimonial">
+
+
+<div class="vertical-navbar-2" id="div-col-1">
+
+    <div class="small-container">
+        <h2 class="title">Top Universities</h2>
+        <h4>Choose Your Dream College</h4>
+        <div class="row">
+
+            <div class="col-3" onclick="location.href = '../products.html'">
+
+                <h2>University of Alberta (UofA)</h2>
+                <img src="../images/college-2.jpeg">
+
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>20 Months</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 25.8 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>TOEFL:100,IELTS:7</strong></p>
+                </div>
+            </div>
+
+            <div class="col-3">
+
+                <h2>University of Tasmania (UTAS)</h2>
+
+                <img src="../images/college-3.jpeg">
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>3 Years</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 22.5 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>TOEFL:72,IELTS:6</strong></p>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <h2>University of Oxford (OU)</h2>
+                <img src="../images/college-4.jpeg">
+
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>6 Years</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 40.8 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>IELTS:7.5</strong></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+<div class="vertical-navbar-2" id="div-col-2">
+<div class="small-container">
+    <h2 class="title">Eligibility</h2>
+    <h4>Are You Eligible</h4>
+    
+    <h3>Application Forms</h3>
+    <p>Inquiries regarding the application must be sent at least 12-15 months before the proposed date of admission. You can
+    obtain the application forms through the following ways:</p>
+
+<h3><strong>Via email:</strong></h3>
+<p>Request application forms from the university website. Universities usually have a form on their website through which
+you can request application material.</p>
+<h3><strong>Downloading from the university website:</strong></h3>
+<p>Most universities websites provide downloadable and ready to print versions of their application forms. You can use
+these just as regular forms.</p>
+<h3><strong>Getting applications from University Representatives:</strong></h3>
+<p>You can also obtain the application forms from various authorized representatives of Australian Universities in India.</p>
+</div>
+</div>
+
+<!------Div 3 -->
+<div class="vertical-navbar-2" id="div-col-3">
+    <div class="small-container">
+        <h2 class="title">Cost of Living</h2>
+        <h4>Are You Eligible</h4>
+        <div class="row">
+
+            <div class="col-3" onclick="location.href = '../products.html'">
+
+                <h2>University of Alberta (UofA)</h2>
+                <img src="../images/college-2.jpeg">
+
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>20 Months</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 25.8 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>TOEFL:100,IELTS:7</strong></p>
+                </div>
+            </div>
+
+            <div class="col-3">
+
+                <h2>University of Tasmania (UTAS)</h2>
+
+                <img src="../images/college-3.jpeg">
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>3 Years</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 22.5 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>TOEFL:72,IELTS:6</strong></p>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <h2>University of Oxford (OU)</h2>
+                <img src="../images/college-4.jpeg">
+
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>6 Years</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 40.8 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>IELTS:7.5</strong></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<!------Div 4----->
+<div class="vertical-navbar-2" id="div-col-4">
+    <div class="small-container">
+        <h2 class="title">About</h2>
+        <h4>Are You Eligible</h4>
+        <div class="row">
+
+            <div class="col-3" onclick="location.href = '../products.html'">
+
+                <h2>University of Alberta (UofA)</h2>
+                <img src="../images/college-2.jpeg">
+
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>20 Months</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 25.8 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>TOEFL:100,IELTS:7</strong></p>
+                </div>
+            </div>
+
+            <div class="col-3">
+
+                <h2>University of Tasmania (UTAS)</h2>
+
+                <img src="../images/college-3.jpeg">
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>3 Years</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 22.5 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>TOEFL:72,IELTS:6</strong></p>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <h2>University of Oxford (OU)</h2>
+                <img src="../images/college-4.jpeg">
+
+                <div>
+
+                    <p>Course Duration:</p>
+                    <p><strong>6 Years</strong></p>
+
+                    <p>1st Year Total Fees:</p>
+                    <p><strong>Rs 40.8 Lakhs</strong></p>
+
+                    <p>Eligibility:</p>
+                    <p><strong>IELTS:7.5</strong></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+        </div>
+    </div>
+
+    
+   
+    
+    <!-- <div class="footer">
+        <div class="conatiner">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+
+                        <img src="../images/play-store.png">
+                        <img src="../images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/career-finder.jpg">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sport Accesssible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../script/index.js"></script>
+</body>
+
+</html>
