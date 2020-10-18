@@ -32,7 +32,7 @@ window.location.href = "../country-college/"+id+".html";
 //----------------------Change Div----------------
 
 function changediv(id){
-
+console.log(id);
     if(id==="div-1"){
         document.getElementById("div-col-1").style.display="block";
         document.getElementById("div-col-2").style.display="none";

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewZealand</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/country.css">
+
+
+</head>
+<style>
+    .header-image {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .header-image img {
+        max-width: 200px;
+    }
+
+    /* -----------vertical-navbar------------ */
+    .vertical-navbar {
+        position: fixed;
+        float: left;
+        left: 0;
+        top: 70px;
+        /* border-right: 2px solid  gray; */
+        height: 1000px
+    }
+
+    .vertical-navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: white;
+    }
+
+    .vertical-navbar li a {
+        text-align: right;
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    /* #div-4 {
+        background-color: #ff523b;
+    } */
+
+    .vertical-navbar li a:hover {
+        background-color: #ff523b;
+        color: white;
+    }
+
+    .vertical-navbar-2 {
+        margin-left: 30px;
+
+    }
+
+    #div-col-2,
+    #div-col-3,
+    #div-col-1 {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <!-- .......Header........ -->
+    <div class="header">
+        <div class="container">
+
+            <div class="navbar">
+
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../index.html">Home</a></li>
+
+
+                        <li><a href="../account.html">Sign Up</a></li>
+                    </ul>
+
+                </nav>
+
+                <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+
+
+        <!---------------------------------------------------------------------------------------------------->
+        <div class="vertical-navbar">
+            <div class="header-image">
+                <img src="../images/country-newzealand.jpg" alt="">
+            </div>
+            <ul>
+                <li><a href="#about" id="div-4" onclick="changediv(this.id)">Overview</a></li>
+                <li><a href="#home" id="div-1" onclick="changediv(this.id)">Top Universities</a></li>
+                <li><a href="#news" id="div-2" onclick="changediv(this.id)">Eligibility</a></li>
+                <li><a href="#contact" id="div-3" onclick="changediv(this.id)">Cost of Living</a></li>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Change Country
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="./UK.html">UK</a>
+                        <a class="dropdown-item" href="./europe.html">Europe</a>
+                        <a class="dropdown-item" href="./australia.html">Australia</a>
+                        <a class="dropdown-item" href="./canada.html">Canada</a>
+
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+
+
+        <!---------------------------------------------------------------------------------------------------->
+
+
+
+        <!-- ........Testimonials......... -->
+        <div class="testimonial">
+
+            <div class="vertical-navbar-2" id="div-col-1">
+
+                <div class="small-container">
+                    <h2 class="title">Top Universities</h2>
+                    <h4>Find Your Dream College</h4>
+                    <div class="row">
+
+
+
+                        <div class="col-3" onclick="location.href = '../college-1.html'">
+
+
+
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <h2>University of Alberta (UofA)</h2>
+                                        <img src="../images/college-2.jpeg">
+
+                                        <div>
+
+                                            <p>Course Duration:</p>
+                                            <p><strong>20 Months</strong></p>
+
+                                            <p>1st Year Total Fees:</p>
+                                            <p><strong>Rs 25.8 Lakhs</strong></p>
+
+                                            <p>Eligibility:</p>
+                                            <p><strong>TOEFL:100,IELTS:7</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
+                                        Established in 1908, the University of Alberta is a public research university
+                                        that is located in Edmonton, Alberta,
+                                        Canada. The university offers a range of academic and professional programs
+                                        leading to undergraduate and graduate-level
+                                        credentials, along with a strong focus on research.
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                        <div class="col-3" onclick="location.href = '../college-2.html'">
+
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <h2>University of Tasmania (UTAS)</h2>
+
+                                        <img src="../images/college-3.jpeg">
+                                        <div>
+
+                                            <p>Course Duration:</p>
+                                            <p><strong>3 Years</strong></p>
+
+                                            <p>1st Year Total Fees:</p>
+                                            <p><strong>Rs 22.5 Lakhs</strong></p>
+
+                                            <p>Eligibility:</p>
+                                            <p><strong>TOEFL:72,IELTS:6</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
+                                        Established in 1908, the University of Alberta is a public research university
+                                        that is located in Edmonton, Alberta,
+                                        Canada. The university offers a range of academic and professional programs
+                                        leading to undergraduate and
+                                        graduate-level
+                                        credentials, along with a strong focus on research.
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-3" onclick="location.href = '../college-3.html'">
+
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <h2>University of Oxford (OU)</h2>
+                                        <img src="../images/college-4.jpeg">
+
+                                        <div>
+
+                                            <p>Course Duration:</p>
+                                            <p><strong>6 Years</strong></p>
+
+                                            <p>1st Year Total Fees:</p>
+                                            <p><strong>Rs 40.8 Lakhs</strong></p>
+
+                                            <p>Eligibility:</p>
+                                            <p><strong>IELTS:7.5</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back">
+                                        Established in 1908, the University of Alberta is a public research university
+                                        that is located in Edmonton, Alberta,
+                                        Canada. The university offers a range of academic and professional programs
+                                        leading to undergraduate and
+                                        graduate-level
+                                        credentials, along with a strong focus on research.
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="vertical-navbar-2" id="div-col-2">
+                <div class="small-container">
+                    <h2 class="title">Eligibility</h2>
+                    <h4>Are You Eligible</h4>
+
+                    <h3>Application Forms</h3>
+                    <p>Inquiries regarding the application must be sent at least 12-15 months before the proposed date
+                        of admission. You can
+                        obtain the application forms through the following ways:</p>
+
+                    <h4><strong>Via email:</strong></h4>
+                    <p>Request application forms from the university website. Universities usually have a form on their
+                        website through which
+                        you can request application material.</p>
+                    <h4><strong>Downloading from the university website:</strong></h4>
+                    <p>Most universities websites provide downloadable and ready to print versions of their application
+                        forms. You can use
+                        these just as regular forms.</p>
+                    <h4><strong>Getting applications from University Representatives:</strong></h4>
+                    <p>You can also obtain the application forms from various authorized representatives of Australian
+                        Universities in India.</p>
+                </div>
+            </div>
+
+            <!------Div 3 -->
+            <div class="vertical-navbar-2" id="div-col-3">
+                <div class="small-container">
+                    <h2 class="title">Cost of Living</h2>
+
+                    <div class="row">
+                        <img src="../images/aus-costofliving.jpg" alt="">
+
+
+                    </div>
+                    <h3>Cost of Study</h3>
+                    <p>The island country Australia is attracting more and more international students from all around
+                        the globe. Some of the
+                        top universities and colleges in the world are located in Australia and thus, Australia is
+                        becoming the new favourite
+                        among students. The Australian education system is another factor that adds to its
+                        attractability. Owing to its
+                        proximity to the Indian sub-continent, Indians student prefer to study in Australia rather than
+                        the western countries.
+                        But how much does education in Australia costs? Read Cost of Studying in Australia to know more.
+                        The tuition fee differs
+                        from university to university as well as the type of programme and course you opt for.</p>
+                    <h3>Cost of Living</h3>
+                    <p>Australia ranks amongst the top 10 in the Human Development Index as well as the Quality of Life
+                        Index. In simple words,
+                        a developed nation, Australia is amongst the top countries of the world in terms of its
+                        education system, the GDP and
+                        purchasing power parity indexes. With a high level of incomes, it also enjoys a high level of
+                        health awareness, an
+                        excellent medical system as well as a politically stable economy.</p>
+
+                    <h3>Working while studying</h3>
+                    <p>Australian Immigration Laws are comparatively easy when it comes to working while studying. A
+                        slight request would often
+                        make you eligible to work in Australia as an international student. Though the rules might vary,
+                        generally students are
+                        allowed to work for up to 40 weeks in a year.</p>
+                </div>
+            </div>
+
+            <!------Div 4----->
+            <div class="vertical-navbar-2" id="div-col-4">
+                <div class="small-container">
+                    <h2 class="title">Overview</h2>
+
+                    <div class="row">
+
+                        <h3>About the country</h3>
+                        <p>Australia is the largest country, geographically, and is a continent in itself. It lies in
+                            the southern hemisphere so
+                            the weather changes are opposite than those of India. Australia has five of the 30 best
+                            cities in the world for students
+                            to live in based on student mix, affordability, quality of life, and employment
+                            opportunities. The capital of Australia
+                            is Canberra.</p>
+
+                        <p><strong>Education system:</strong>Australia has the third-highest number of international
+                            students in the world after the United Kingdom and the United
+                            States. It also has seven of the top 100 universities in the world. Australia's national
+                            quality assurance system is
+                            unique in its structure and rigor. The Australian Quality Training Framework has been set up
+                            by the government to
+                            strengthen the quality assurance processes in education.</p>
+
+                        <p> <strong>Safety in Australia:</strong> Australia is a multicultural society that welcomes
+                            people from other cultures, countries, and
+                            backgrounds. While the majority of Indian students studying in Australia have a positive
+                            experience of living and
+                            studying in Australia, there were a number of incidents of assault as well as of robbery
+                            during 2009 and 2010, which
+                            affected not only Indian students but also members of the larger Indian community in
+                            Australia. Presently, no such
+                            incidents have been reported and active efforts have been made by the Australian government
+                            to prevent such untoward
+                            incidents from happening in future.</p>
+
+                        <p>
+                            <strong>
+
+                                Weather
+                            </strong>
+                            <br />
+                            Australia is diverse in its geography and climate. The country is located in the southern
+                            hemisphere. This means
+                            Australia's summer starts in December and winter begins in June. Nearly a third of Australia
+                            is in the tropics where the
+                            average temperatures are in the mid 20 degrees Celsius. The southern areas are in a
+                            temperate zone.
+                            <br><br>
+                            <strong>
+
+                                Australian Capital Territory –
+                            </strong>
+                            This region covers Canberra. It has hot, dry summers, and cold winters with occasional
+                            fog and frequent frosts. The average temperature in summers would be around 30°C to 15°C; in
+                            winters it would be around
+                            11°C to 0°C.
+                            <br><br>
+                            <strong>
+
+                                New South Wales –
+                            </strong>
+                            This region covers Sydney and its weather is very relaxing all around the year. The average
+                            temperature in summers would be around 22°C to 40°C; in winters it would be around 17°C to
+                            8°C.
+                            <br><br>
+                            <strong>
+                                Northern Territory –
+                            </strong>
+                            This region has a tropical climate, and has two distinct seasons, the 'Wet' and the 'Dry'.
+                            The Wet
+                            season spans from November until April and is characterized by increased humidity followed
+                            by monsoonal rains and
+                            storms. The 'Dry’ season, from May until October, is characterized by warm, dry sunny days
+                            and cool nights. This region
+                            covers Darwin. The average temperature in the wet season would be around 33°C to 25°C; in
+                            the dry season, it would be
+                            around 35°C to 21°C.
+                            <br><br>
+                            <strong>
+                                Queensland -
+                            </strong>
+                            Warm summers and mild winters are what you can expect here. This region covers Brisbane. The
+                            average
+                            temperature in summers would be around 20°C to 30°C; in winters it would be around 20°C to
+                            10°C.
+
+
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../script/index.js"></script>
+</body>
+
+</html>
