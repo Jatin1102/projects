@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <title>Job Seeker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8af8eddf83.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    #div-1-3,
+    #div-1-2,
+    #div-2-3,
+    #div-2-2,
+    #div-3-3,
+    #div-3-2 {
+        display: none;
+    }
+nav{
+	background: white;
+	z-index:500;
+	position: fixed;
+	width:100%
+  }
+  nav:after{
+	content: '';
+	clear: both;
+	display: table;
+	z-index:500;
+  }
+  nav .logo{
+	float: left;
+	color: black;
+	font-size: 27px;
+	font-weight: 600;
+	line-height: 70px;
+	z-index:500;
+	padding-left: 60px;
+  }
+  nav ul{
+	float: right;
+	margin-right: 40px;
+	list-style: none;
+	position: relative;
+	z-index:500;
+  }
+  nav ul li{
+	float: left;
+	display: inline-block;
+	background: white;
+	margin: 0 5px;
+	z-index:500;
+  }
+  nav ul li a{
+	color: black;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 8px 15px;
+	z-index:500;
+  }
+  nav ul li a:hover{
+	color: #673AB7;
+	border-radius: 5px;
+	box-shadow:  0 0 5px #673AB7,
+				 0 0 10px #B39DDB;
+				 z-index:500;
+  }
+  nav ul ul li a:hover{
+	box-shadow: none;
+	z-index:500;
+  }
+  nav ul ul{
+	position: absolute;
+	top: 90px;
+	border-top: 3px solid #673AB7;
+	opacity: 0;
+	visibility: hidden;
+	transition: top .3s;
+	z-index:500;
+  }
+  nav ul ul ul{
+	border-top: none;
+	z-index:500;
+  }
+  nav ul li:hover > ul{
+	top: 70px;
+	opacity: 1;
+	z-index:500;
+	visibility: visible;
+  }
+  nav ul ul li{
+	position: relative;
+	margin: 0px;
+	width: 150px;
+	float: none;
+	z-index:500;
+	display: list-item;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
+  nav ul ul li a{
+	line-height: 50px;
+	z-index:500;
+  }
+  nav ul ul ul li{
+	position: relative;
+	top: -60px;
+	z-index:500;
+	left: 150px;
+  }
+  .show, .icon , input{
+	display: none;
+  }
+  .fa-caret-down{
+	font-size: 20px;
+	z-index:500;
+  }
+  @media all and (max-width: 968px) {
+	nav{
+		position:relative;
+	}
+	nav ul{
+	  margin-right: 0px;
+	  float: left;
+	}
+	nav .logo{
+	  padding-left: 30px;
+	  width: 100%;
+	}
+	.show + a, ul{
+	  display: none;
+	}
+	nav ul li,nav ul ul li{
+	  display: block;
+	  width: 100%;
+	}
+	nav ul li a:hover{
+	  box-shadow: none;
+	}
+	.show{
+	  display: block;
+	  color: white;
+	  font-size: 18px;
+	  padding: 0 15px;
+	  line-height: 70px;
+	  cursor: pointer;
+	}
+	.show:hover{
+	  color: cyan;
+	}
+	.icon{
+	  display: block;
+	  color: white;
+	  position: absolute;
+	  top: 0;
+	  right: 40px;
+	  line-height: 70px;
+	  cursor: pointer;
+	  font-size: 25px;
+	}
+	nav ul ul{
+	  top: 70px;
+	  border-top: 0px;
+	  float: none;
+	  position: static;
+	  display: none;
+	  opacity: 1;
+	  visibility: visible;
+	}
+	nav ul ul a{
+	  padding-left: 40px;
+	}
+	nav ul ul ul a{
+	  padding-left: 80px;
+	}
+	nav ul ul ul li{
+	  position: static;
+	}
+	[id^=btn]:checked + ul{
+	  display: block;
+	}
+	nav ul ul li{
+	  border-bottom: 0px;
+	}
+	span.cancel:before{
+	  content: '\f00d';
+	}
+  }
+
+
+
+</style>
+<body>
+
+<nav>
+    <div class="logo">Arddena Immegrartion</div>
+    <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li>
+            <label for="btn-1" class="show">Study Abroad <i class="fas fa-caret-down"></i> </label>
+            <a href="#">Study Abroad <i class="fas fa-caret-down"></i></a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+                <li><a href="canada.html">Canada</a></li>
+                <li><a href="australia.html">Australia</a></li>
+                <li><a href="newzealand.html">New Zeland</a></li>
+                <li><a href="UK.html">U.K.</a></li>
+                <li><a href="europe.html">E.U.</a></li>
+            </ul>
+        </li>
+        <li><a href="permanent-residence.html">Pt. Residance</i></a>
+        </li>
+        <li><a href="jobseeker.html">Job Seeker</a></li>
+        <li><a href="IELTS.html">IELTS</a></li>
+  <li><a href="/account.html">Sign In</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+
+        <div class="container">
+            <div style="background-image: url(./images/germany-visa.jpg);" class="page-heading ">
+                <div class="row">
+                    <div class="col-md-12">
+                       
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row main-row" style="border-radius: 20px;">
+                <div class="div-left">
+        
+                    <h2>How well do you fit this programme?
+                        <br>
+                        Find out with our <strong>BestFit </strong> tool!</h2>
+                </div>
+                <div class="div-right">
+                    <img src="https://monet-prtl-co.imgix.net/Shared/BestFit/bestfit_banner_desktop.svg" alt="">
+                    <a href="" class="filled-button">Check Eligibilty</a>
+        
+                </div>
+            </div>
+        
+            <div class="single-services">
+                <div class="container">
+        
+                    <div class="row " id="tabs">
+                        <div class="col-md-4">
+                            <ul>
+                                <li><a href='#tabs-1'>Overview <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href='#tabs-2'>Expense <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href='#tabs-3'>Eligibilty <i class="fa fa-angle-right"></i></a></li>
+        
+                            </ul>
+                        </div>
+                        <div class="col-md-8">
+        
+                            <section class='tabs-content'>
+                                <article id='tabs-1'>
+                                    <!-- Second-div -->
+        
+                                    <div class="upper-div">
+                                        <div class="row">
+                                            <div class="col-4">
+        
+                                                <a class="" id="tab-1-1" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-1</button> </a>
+        
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="" id="tab-1-2" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-2</button> </a>
+        
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="" id="tab-1-3" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-3</button> </a>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+                                    <!-- <div class="upper-div">
+                                                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                                
+                                                        
+                                                        <div class="" id="navbarNavDropdown">
+                                                            <ul class="navbar-nav">
+                                                                <li class="nav-item ">
+                                                                    
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                   
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    
+                                                                </li>
+                                                
+                                                            </ul>
+                                                        </div>
+                                                    </nav>
+                                                </div> -->
+        
+        
+                                    <!-- Second-div -->
+                                    <div id="div-1-1">
+                                        <h2> <strong> Overview(Tab-1)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+                                    </div>
+                                    <div id="div-1-2">
+                                        <h2> <strong> Overview(Tab-2)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+        
+                                    </div>
+                                    <div id="div-1-3">
+                                        <h2> <strong> Overview(Tab-3)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+        
+                                    </div>
+        
+        
+        
+        
+        
+        
+        
+                                </article>
+                                <article id='tabs-2'>
+                                    <!-- Second-div -->
+                                    <div class="upper-div">
+                                        <div class="row">
+                                            <div class="col-4">
+        
+                                                <a class="" id="tab-2-1" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-1</button> </a>
+        
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="" id="tab-2-2" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-2</button> </a>
+        
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="" id="tab-2-3" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-3</button> </a>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <!-- Second-div -->
+                                    <div id="div-2-1">
+                                        <h2> <strong> Expense(Tab-1)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+                                    </div>
+                                    <div id="div-2-2">
+                                        <h2> <strong> Expense(Tab-2)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+        
+                                    </div>
+                                    <div id="div-2-3">
+                                        <h2> <strong> Expense(Tab-3)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+        
+                                    </div>
+                                </article>
+                                <article id='tabs-3'>
+                                    <!-- Second-div -->
+                                    <div class="upper-div">
+                                        <div class="row">
+                                            <div class="col-4">
+        
+                                                <a class="" id="tab-3-1" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-1</button> </a>
+        
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="" id="tab-3-2" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-2</button> </a>
+        
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="" id="tab-3-3" onclick="changediv(this.id)"> <button
+                                                        class="upper-button">Tab-3</button> </a>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <!-- Second-div -->
+                                    <div id="div-3-1">
+                                        <h2> <strong> Eligibilty(Tab-1)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+                                    </div>
+                                    <div id="div-3-2">
+                                        <h2> <strong> Eligibilty(Tab-2)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+        
+                                    </div>
+                                    <div id="div-3-3">
+                                        <h2> <strong> Eligibilty(Tab-3)</strong> </h2>
+                                        <p>Nobel prize winner Douglass North (1991) defines institutions as ‘humanely devised
+                                            constraints that structure political,
+                                            economic and social interaction.’ Institutions provide societies and individuals
+                                            with a
+                                            level of organization and
+                                            security that is welfare enhancing both in good times and, perhaps especially,
+                                            during
+                                            times of uncertainty and crisis.
+                                            Douglass North observes: ‘Throughout history, institutions have been devised by
+                                            human
+                                            beings to create order and reduce
+                                            uncertainty in exchange.’ North assigns institutions a crucial role in the economy:
+                                            ‘Institutions provide the incentive
+                                            structure of an economy; as that structure evolves, it shapes the direction of
+                                            economic
+                                            change towards growth,
+                                            stagnation, or decline.’
+                                            <br><br>
+                                            Institutions play a major role in our economy. Learning how the economy works and
+                                            how it
+                                            can be governed requires an
+                                            understanding of economic institutions. Completion of the programme will prepare you
+                                            for
+                                            a career as a professional
+                                            economist in government or business or provide you with a solid basis for an
+                                            academic
+                                            career.</p>
+        
+                                    </div>
+                                </article>
+        
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language="text/Javascript">
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t) {                   //declaring the array outside of the
+            if (!cleared[t.id]) {                      // function makes it static and global
+                cleared[t.id] = 1;  // you could use true and false, but that's more typing
+                t.value = '';         // with more chance of typos
+                t.style.color = '#fff';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

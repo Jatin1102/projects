@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <title>Europe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/8af8eddf83.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    #div-1-3,#div-1-2,#div-2-3,#div-2-2,#div-3-3,#div-3-2,#div-4-3,#div-4-2,#div-5-3,#div-5-2,#div-6-3,#div-6-2,#div-7-3,#div-7-2,#div-8-3,#div-8-2,#div-9-3,#div-9-2,#div-10-3,#div-10-2,#div-11-3,#div-11-2,#div-12-3,#div-12-2,#div-13-3,#div-13-2,#div-14-3,#div-14-2,#div-15-3,#div-15-2,#div-16-3,#div-16-2,#div-17-3,#div-17-2,#div-18-3,#div-18-2,#div-19-3,#div-19-2,#div-20-3,#div-20-2,#div-21-3,#div-21-2,#div-22-3,#div-22-2,#div-23-3,#div-23-2,#div-24-3,#div-24-2,#div-25-3,#div-25-2,#div-26-3,#div-26-2,#div-27-3,#div-27-2{
+        display:none;
+    }
+    
+    ul li{
+        border-radius:50%;
+    }
+    nav{
+	background: white;
+	z-index:500;
+	position: fixed;
+	width:100%
+  }
+  nav:after{
+	content: '';
+	clear: both;
+	display: table;
+	z-index:500;
+  }
+  nav .logo{
+	float: left;
+	color: black;
+	font-size: 27px;
+	font-weight: 600;
+	line-height: 70px;
+	z-index:500;
+	padding-left: 60px;
+  }
+  nav ul{
+	float: right;
+	margin-right: 40px;
+	list-style: none;
+	position: relative;
+	z-index:500;
+  }
+  nav ul li{
+	float: left;
+	display: inline-block;
+	background: white;
+	margin: 0 5px;
+	z-index:500;
+  }
+  nav ul li a{
+	color: black;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 8px 15px;
+	z-index:500;
+  }
+  nav ul li a:hover{
+	color: #673AB7;
+	border-radius: 5px;
+	box-shadow:  0 0 5px #673AB7,
+				 0 0 10px #B39DDB;
+				 z-index:500;
+  }
+  nav ul ul li a:hover{
+	box-shadow: none;
+	z-index:500;
+  }
+  nav ul ul{
+	position: absolute;
+	top: 90px;
+	border-top: 3px solid #673AB7;
+	opacity: 0;
+	visibility: hidden;
+	transition: top .3s;
+	z-index:500;
+  }
+  nav ul ul ul{
+	border-top: none;
+	z-index:500;
+  }
+  nav ul li:hover > ul{
+	top: 70px;
+	opacity: 1;
+	z-index:500;
+	visibility: visible;
+  }
+  nav ul ul li{
+	position: relative;
+	margin: 0px;
+	width: 150px;
+	float: none;
+	z-index:500;
+	display: list-item;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
+  nav ul ul li a{
+	line-height: 50px;
+	z-index:500;
+  }
+  nav ul ul ul li{
+	position: relative;
+	top: -60px;
+	z-index:500;
+	left: 150px;
+  }
+  .show, .icon , input{
+	display: none;
+  }
+  .fa-caret-down{
+	font-size: 20px;
+	z-index:500;
+  }
+  @media all and (max-width: 968px) {
+	nav{
+		position:relative;
+	}
+	nav ul{
+	  margin-right: 0px;
+	  float: left;
+	}
+	nav .logo{
+	  padding-left: 30px;
+	  width: 100%;
+	}
+	.show + a, ul{
+	  display: none;
+	}
+	nav ul li,nav ul ul li{
+	  display: block;
+	  width: 100%;
+	}
+	nav ul li a:hover{
+	  box-shadow: none;
+	}
+	.show{
+	  display: block;
+	  color: white;
+	  font-size: 18px;
+	  padding: 0 15px;
+	  line-height: 70px;
+	  cursor: pointer;
+	}
+	.show:hover{
+	  color: cyan;
+	}
+	.icon{
+	  display: block;
+	  color: white;
+	  position: absolute;
+	  top: 0;
+	  right: 40px;
+	  line-height: 70px;
+	  cursor: pointer;
+	  font-size: 25px;
+	}
+	nav ul ul{
+	  top: 70px;
+	  border-top: 0px;
+	  float: none;
+	  position: static;
+	  display: none;
+	  opacity: 1;
+	  visibility: visible;
+	}
+	nav ul ul a{
+	  padding-left: 40px;
+	}
+	nav ul ul ul a{
+	  padding-left: 80px;
+	}
+	nav ul ul ul li{
+	  position: static;
+	}
+	[id^=btn]:checked + ul{
+	  display: block;
+	}
+	nav ul ul li{
+	  border-bottom: 0px;
+	}
+	span.cancel:before{
+	  content: '\f00d';
+	}
+  }
+</style>
+
+<body>
+
+<nav>
+    <div class="logo">Arddena Immegrartion</div>
+    <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+    <li><a href="/index.html">Home</a></li>
+        <li>
+            <label for="btn-1" class="show">Study Abroad <i class="fas fa-caret-down"></i> </label>
+            <a href="#">Study Abroad <i class="fas fa-caret-down"></i></a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+                <li><a href="canada.html">Canada</a></li>
+                <li><a href="australia.html">Australia</a></li>
+                <li><a href="newzealand.html">New Zeland</a></li>
+                <li><a href="UK.html">U.K.</a></li>
+                <li><a href="europe.html">E.U.</a></li>
+            </ul>
+        </li>
+        <li><a href="permanent-residence.html">Pt. Residance</i></a>
+        </li>
+        <li><a href="jobseeker.html">Job Seeker</a></li>
+        <li><a href="IELTS.html">IELTS</a></li>
+        <li><a href="/account.html">Sign In</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+    <!-- Page Content -->
+    <div style="background-image: url(./images/europian-union.png); "
+        class="page-heading header-text">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <!-- <h1>IELTS</h1> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="single-services">
+        <div class="container">
+
+            <div class="row " id="tabs">
+                <div class="col-md-4" style="overflow-y: scroll; height: 350px;" >
+
+                    
+
+                    <ul>
+                        <li><a href='#tabs-1'> <img src="./images/flag-austria.jpg" style="border-radius: 100%;"" width='30px'; height='30px'>  Austria <i class="fa fa-angle-right"></i></a></li>
+                        <li><a href='#tabs-2'><img src="./images/flag-Belgium.jpg" style="border-radius: 100%;" width=30px height="30px">Belgium <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-3'><img src="./images/flag-Bulgaria.jpg" style="border-radius: 100%;" width=30px height="30px">Bulgaria <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-4'><img src="./images/flag-Croatia.jpg" style="border-radius: 100%;" width=30px height="30px">Croatia <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-5'><img src="./images/flag-Cyprus.jpg" style="border-radius: 100%;" width=30px height="30px">Cyprus <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-6'><img src="./images/flag-Czech-republic.jpg" style="border-radius: 100%;" width=30px height="30px">Czechia <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-7'><img src="./images/flag-Finland.jpg" style="border-radius: 100%;" width=30px height="30px">Finland<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-8'><img src="./images/flag-France.jpg" style="border-radius: 100%;" width=30px height="30px">France <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-9'><img src="./images/flag-Germany.jpg" style="border-radius: 100%;" width=30px height="30px">Germany <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-10'><img src="./images/flag-Bulgaria.jpg" style="border-radius: 100%;" width=30px height="30px">Bulgaria <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-11'><img src="./images/flag-Greece.jpg" style="border-radius: 100%;" width=30px height="30px">Greece <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-12'><img src="./images/flag-Hungary.jpg" style="border-radius: 100%;" width=30px height="30px">Hungary <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-13'><img src="./images/flag-Ireland.jpg" style="border-radius: 100%;" width=30px height="30px">Ireland<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-14'><img src="./images/flag-Italy.jpg" style="border-radius: 100%;" width=30px height="30px">Italy <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-15'><img src="./images/flag-Latvian.jpg" style="border-radius: 100%;" width=30px height="30px">Latvia<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-16'><img src="./images/flag-Lithuania.jpg" style="border-radius: 100%;" width=30px height="30px">Lithuania <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-17'><img src="./images/flag-Luxembourg.jpg" style="border-radius: 100%;" width=30px height="30px">Luxembourg <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-18'><img src="./images/flag-Malta.jpg" style="border-radius: 100%;" width=30px height="30px">Malta <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-19'><img src="./images/flag-Netherlands.jpg" style="border-radius: 100%;" width=30px height="30px">Netherlands <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-20'><img src="./images/flag-Poland.jpg" style="border-radius: 100%;" width=30px height="30px">Poland <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-21'><img src="./images/flag-Portugal.jpg" style="border-radius: 100%;" width=30px height="30px">Portugal <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-22'><img src="./images/flag-Romania.jpg" style="border-radius: 100%;" width=30px height="30px">Romania <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-23'><img src="./images/flag-Slovakia.jpg" style="border-radius: 100%;" width=30px height="30px">Slovakia <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-24'><img src="./images/flag-Slovenia.jpg" style="border-radius: 100%;" width=30px height="30px">Slovenia <i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-25'><img src="./images/flag-Spain.jpg" style="border-radius: 100%;" width=30px height="30px">Spain<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href='#tabs-26'><img src="./images/flag-Sweden.jpg" style="border-radius: 100%;" width=30px height="30px">Sweden <i class="fa fa-angle-right"></i></a></li>
+                    
+
+                    </ul>
+                </div>
+                <div class="col-md-8">
+
+                    <section class='tabs-content'>
+                        <article id='tabs-1'>
+                            <h1>Austria</h1>
+                            <!-- Second-div -->
+                            <div class="upper-div">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                                   
+                                    <div class="" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item ">
+                                                <a class="nav-link" id="tab-1-1" onclick="changediv(this.id)">Home <span
+                                                        class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="tab-1-2"
+                                                    onclick="changediv(this.id)">Features</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="tab-1-3"
+                                                    onclick="changediv(this.id)">Pricing</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+
+                            <!-- Second-div -->
+                            <div id="div-1-1">
+                                <h2> <strong> Overview(Home)</strong> </h2>
+                                
+                            </div>
+                            <div id="div-1-2">
+                                <h2> <strong> Overview(Featured)</strong> </h2>
+                                
+
+                            </div>
+                            <div id="div-1-3">
+                                <h2> <strong> Overview(Pricing)</strong> </h2>
+                                
+
+                            </div>
+ </article>
+                        <article id='tabs-2'>
+                            <h1>Belgium</h1>
+                            <!-- Second-div -->
+                            <div class="upper-div">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                                    
+                                    <div class="" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item ">
+                                                <a class="nav-link" id="tab-2-1" onclick="changediv(this.id)">Home <span
+                                                        class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="tab-2-2"
+                                                    onclick="changediv(this.id)">Features</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="tab-2-3"
+                                                    onclick="changediv(this.id)">Pricing</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+
+                            <!-- Second-div -->
+                            <div id="div-2-1">
+                                <h2> <strong> Overview(Home)</strong> </h2>
+                               
+                            </div>
+                            <div id="div-2-2">
+                                <h2> <strong> Overview(Featured)</strong> </h2>
+                                
+
+                            </div>
+                            <div id="div-2-3">
+                                <h2> <strong> Overview(Pricing)</strong> </h2>
+                                
+
+                            </div>
+                        </article>
+                        <article id='tabs-3'>
+                            <h1>
+                                Bulgaria
+                            </h1>
+                            <!-- Second-div -->
+                            <div class="upper-div">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                                    
+                                    <div class="" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item ">
+                                                <a class="nav-link" id="tab-3-1" onclick="changediv(this.id)">Home <span
+                                                        class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="tab-3-2"
+                                                    onclick="changediv(this.id)">Features</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="tab-3-3"
+                                                    onclick="changediv(this.id)">Pricing</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+
+                            <!-- Second-div -->
+                            <div id="div-3-1">
+                                <h2> <strong> Overview(Home)</strong> </h2>
+                                
+                            </div>
+                            <div id="div-3-2">
+                                <h2> <strong> Overview(Featured)</strong> </h2>
+                                
+                            </div>
+                            <div id="div-3-3">
+                                <h2> <strong> Overview(Pricing)</strong> </h2>
+                                
+
+                            </div>
+                        </article>
+<article id='tabs-4'>
+    <h1>Croatia</h1>
+    <!-- Second-div -->
+    <div class="upper-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+           
+            <div class="" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="tab-4-1" onclick="changediv(this.id)">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-4-2" onclick="changediv(this.id)">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-4-3" onclick="changediv(this.id)">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Second-div -->
+    <div id="div-4-1">
+        <h2> <strong> Overview(Home)</strong> </h2>
+
+    </div>
+    <div id="div-4-2">
+        <h2> <strong> Overview(Featured)</strong> </h2>
+
+
+    </div>
+    <div id="div-4-3">
+        <h2> <strong> Overview(Pricing)</strong> </h2>
+
+
+    </div>
+</article>
+<article id='tabs-5'>
+    <h1>Cyprus</h1>
+    <!-- Second-div -->
+    <div class="upper-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+           
+            <div class="" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="tab-5-1" onclick="changediv(this.id)">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-5-2" onclick="changediv(this.id)">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-5-3" onclick="changediv(this.id)">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Second-div -->
+    <div id="div-5-1">
+        <h2> <strong> Overview(Home)</strong> </h2>
+
+    </div>
+    <div id="div-5-2">
+        <h2> <strong> Overview(Featured)</strong> </h2>
+
+
+    </div>
+    <div id="div-5-3">
+        <h2> <strong> Overview(Pricing)</strong> </h2>
+
+
+    </div>
+</article>
+<article id='tabs-6'>
+    <h1>Czechia</h1>
+    <!-- Second-div -->
+    <div class="upper-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+           
+            <div class="" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="tab-6-1" onclick="changediv(this.id)">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-6-2" onclick="changediv(this.id)">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-6-3" onclick="changediv(this.id)">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Second-div -->
+    <div id="div-6-1">
+        <h2> <strong> Overview(Home)</strong> </h2>
+
+    </div>
+    <div id="div-6-2">
+        <h2> <strong> Overview(Featured)</strong> </h2>
+
+
+    </div>
+    <div id="div-6-3">
+        <h2> <strong> Overview(Pricing)</strong> </h2>
+
+
+    </div>
+</article>
+<article id='tabs-7'>
+    <h1>Denmark</h1>
+    <!-- Second-div -->
+    <div class="upper-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+           
+            <div class="" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="tab-7-1" onclick="changediv(this.id)">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-7-2" onclick="changediv(this.id)">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-7-3" onclick="changediv(this.id)">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Second-div -->
+    <div id="div-7-1">
+        <h2> <strong> Overview(Home)</strong> </h2>
+
+    </div>
+    <div id="div-7-2">
+        <h2> <strong> Overview(Featured)</strong> </h2>
+
+
+    </div>
+    <div id="div-7-3">
+        <h2> <strong> Overview(Pricing)</strong> </h2>
+
+
+    </div>
+</article>
+<article id='tabs-8'>
+    <h1>Estonia</h1>
+    <!-- Second-div -->
+    <div class="upper-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+           
+            <div class="" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="tab-8-1" onclick="changediv(this.id)">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-8-2" onclick="changediv(this.id)">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-8-3" onclick="changediv(this.id)">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Second-div -->
+    <div id="div-8-1">
+        <h2> <strong> Overview(Home)</strong> </h2>
+
+    </div>
+    <div id="div-8-2">
+        <h2> <strong> Overview(Featured)</strong> </h2>
+
+
+    </div>
+    <div id="div-8-3">
+        <h2> <strong> Overview(Pricing)</strong> </h2>
+
+
+    </div>
+</article>
+<article id='tabs-9'>
+    <h1>Finland</h1>
+    <!-- Second-div -->
+    <div class="upper-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+           
+            <div class="" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="tab-9-1" onclick="changediv(this.id)">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-9-2" onclick="changediv(this.id)">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-9-3" onclick="changediv(this.id)">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Second-div -->
+    <div id="div-9-1">
+        <h2> <strong> Overview(Home)</strong> </h2>
+
+    </div>
+    <div id="div-9-2">
+        <h2> <strong> Overview(Featured)</strong> </h2>
+
+
+    </div>
+    <div id="div-9-3">
+        <h2> <strong> Overview(Pricing)</strong> </h2>
+
+
+    </div>
+</article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language="text/Javascript">
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t) {                   //declaring the array outside of the
+            if (!cleared[t.id]) {                      // function makes it static and global
+                cleared[t.id] = 1;  // you could use true and false, but that's more typing
+                t.value = '';         // with more chance of typos
+                t.style.color = '#fff';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
